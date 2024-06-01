@@ -62,3 +62,70 @@
 html{
   scroll-behavior: smooth;
 }
+@media screen and (min-width:1024px){
+  .section2_center{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 100px;
+    column-gap: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  .section2_center{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
+    column-gap: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width:0) and (max-width:768px) {
+  .section2_center{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 46px;
+    justify-items: center;
+  }
+}
+.mobile-container {
+  max-width: 100%;
+  height: auto;
+  color: white;
+}
+
+.topnav {
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: rgb(175, 178, 180);
+  transition: 300ms;
+  background-image: url(../images/section22/background.png);
+  &:hover{
+    color: white;
+  }
+}
+
+.topnav a.icon {
+  width: 100% ;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 120px;
+}
+
+.active {
+  height: 180px;
+  background-image: url(../images/section22/background.png);
+  color: white;
+}
