@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="./public/css/animation.css" />
     <link rel="stylesheet" href="./public/css/tailwind/output.css" />
     <link rel="stylesheet" href="./public/css/tailwind/hover.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
   </head>
   <body>
+    
+
+      <button type="button" id="theme-toggler" class="fas fa-moon  text-white fixed" style="z-index: 10;bottom: 10px; right: 10px; width: 40px; height: 40px; color: white; background-color: black; border-radius: 10px;"></button>
     <!--make website-->
     <div class="wrappper">
       <a href="#top"></a>
@@ -940,6 +944,7 @@
         <span class="text-[15px] font-normal text-[#9F9F9F]">All Right Reserved Golestan Company 2022-2025</span>
         <p class="text-[14px] font-normal text-[#7B7B7B]">Design By: Golestan Studio</p>
       </div>
+      
       <!--section23-->
       <!--top-->
       <div class="top w-[40px] h-[40px] bg-[#00000066] fixed bottom-0 left-[20px] mobile:bottom-3 transition-[300ms] hover:bg-[#080808]">
@@ -973,7 +978,19 @@
           } else {
             x.style.display = "block";
           }
-        }
+        };
+        let themeToggler = document.getElementById('theme-toggler');
+
+themeToggler.onclick = () => {
+  themeToggler.classList.toggle('fa-sun');
+  themeToggler.classList.toggle('fa-moon');
+
+  if (themeToggler.classList.contains('fa-sun')) {
+    document.documentElement.classList.add('dark-mode');
+  } else {
+    document.documentElement.classList.remove('dark-mode');
+  }
+};
       </script>
     </div>
     <!--end make website-->

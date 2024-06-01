@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="./public/css/tailwind/hover.css" />
   </head>
   <body>
+    
+    <button type="button" id="theme-toggler" class="fas fa-moon  text-white fixed" style="z-index: 10;bottom: 10px; right: 5px; width: 40px; height: 40px; color: white; background-color: black; border-radius: 10px;"></button>
     <div class="wrapper">
       <a href="#top"></a>
       <!--mobile menu-->
       <div class="mobile-container desktop:hidden tablet:hidden w-[100%] fixed">
         <div class="topnav w-[100%] ">
           <a href="./index.html" class="active">
-            <img class="m-auto" src="./public/images/menu/banner.png" alt="banner" />
+            <img class="m-auto" src="./public/images/menu/banner.png" alt="" />
           </a>
           <div id="myLinks">
             <a href="./index.html">صفحه اصلی</a>
@@ -206,7 +208,7 @@
       <!--section1-->
       <!--section2-->
       <div
-        class="section2 desktop:w-[100%] desktop:h-auto desktop:flex desktop:justify-center tablet:flex tablet:justify-center mobile:w-[100%] mobile:flex mobile:pt-[50px] mobile:pb-[50px] mobile:justify-center  bg-[#F7F9FB] dark:bg-[#1e293b]"
+        class="section2 desktop:w-[100%] desktop:h-auto desktop:flex desktop:justify-center tablet:flex tablet:justify-center mobile:w-[100%] mobile:flex mobile:pt-[50px] mobile:pb-[50px] mobile:justify-center  dark:bg-[#1e293b]"
       >
         <div
           class="section2_center desktop:w-[70%] desktop:grid tablet:w-[70%]  tablet:grid mobile:grid mobile:w-[70%] "
@@ -601,7 +603,7 @@
       <!--section2-->
       <!--section3-->
       <div
-          class="section3 w-[100%] desktop:h-[570px] mobile:h-[995px] desktop:flex tablet:flex desktop:flex-row tablet:flex-row mobile:flex mobile:flex-col desktop:flex-wrap tablet:flex-wrap justify-center items-center desktop:gap-x-[10px] tablet:gap-x-[15px] desktop:mt-0 tablet:mt-0 mobile:mt-[40px] mobile:gap-y-[30px] bg-[#F7F9FB] dark:bg-[#1e293b]
+          class="section3 w-[100%] desktop:h-[570px] mobile:h-[995px] desktop:flex tablet:flex desktop:flex-row tablet:flex-row mobile:flex mobile:flex-col desktop:flex-wrap tablet:flex-wrap justify-center items-center desktop:gap-x-[10px] tablet:gap-x-[15px] desktop:mt-0 tablet:mt-0 mobile:mt-[40px] mobile:gap-y-[30px]  dark:bg-[#1e293b]
           " 
         >
           <div
@@ -1075,6 +1077,10 @@
           Design By: Golestan Studio
         </p>
       </div>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+
+
+
       <!--section6-->
       <!--top-->
       <div
@@ -1112,7 +1118,19 @@
           } else {
             x.style.display = "block";
           }
-        }
+        };
+        let themeToggler = document.getElementById('theme-toggler');
+
+themeToggler.onclick = () => {
+  themeToggler.classList.toggle('fa-sun');
+  themeToggler.classList.toggle('fa-moon');
+
+  if (themeToggler.classList.contains('fa-sun')) {
+    document.documentElement.classList.add('dark-mode');
+  } else {
+    document.documentElement.classList.remove('dark-mode');
+  }
+};
       </script>
     </div>
   </body>
