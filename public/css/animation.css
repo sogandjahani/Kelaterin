@@ -1,64 +1,4 @@
-@keyframes section_1 {
-  0% {
-    left: 0px;
-    top: -100px;
-    opacity: 0;
-  }
 
-  100% {
-    left: 0px;
-    top: 0;
-    opacity: 1;
-  }
-}
-.section1{
-    .section1_center{
-      .section1_right {
-  & p {
-    animation-name: section_1;
-    animation-duration: 2s;
-  }  
-    }
-    .section1_left{
-        & img{
-            animation-name: section_1;
-                animation-duration: 2s;
-        }
-    }
-}
-}
-@keyframes section_3_top {
-  0% {
-    right: -1000px;
-    top: 0;
-    opacity: 0;
-  }
-
-  100% {
-    right: 0px;
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes section_3_bottom {
-  0% {
-    transform: scale3d(0.3, 0.3, 0.3);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-.section3{
-  & section{
-    animation-name: section_3_top;
-    animation-duration: 1s;
-  }
-}
-.secion3_4{
-  animation-name: section_3_bottom;
-  animation-duration: 2s;
-}
 html{
   scroll-behavior: smooth;
 }
@@ -108,7 +48,7 @@ html{
   font-size: 14px;
   color: rgb(175, 178, 180);
   transition: 300ms;
-  background-image: url(../images/section22/background.png);
+  background-color: black;
   &:hover{
     color: white;
   }
@@ -126,14 +66,10 @@ html{
 
 .active {
   height: 180px;
-  background-image: url(../images/section22/background.png);
+  background-color: black;
   color: white;
 }
-:root {
-  --backgound: #f6f6f6;
-  --backgound-overlay: rgba(255, 255, 255, 0.4);
-  --font-colour: #202020
-}
+
 :root.dark-mode {
   --backgound: #1e293b;
   --backgound-overlay: rgba(32, 32, 32, 0.8);
@@ -144,14 +80,4 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: var(--font-colour);
-  background: var(--backgound);
-  transition: background .4s ease-out;
-  /* transition: background 5s ease-in, color 1s ease-out; */
-}
-.section22{
-  overflow: hidden;
-}
-.section5{
-  overflow: hidden;
 }

@@ -1,60 +1,87 @@
 .facebook {
-    & svg {
-      &:hover path {
-        fill: #4e7ab5;
-        stroke: white;
-      }
-      &:hover .letter {
-        fill: white;
-      }
+  & svg {
+    &:hover path {
+      fill: #4e7ab5;
+      stroke: white;
+    }
+    &:hover .letter {
+      fill: white;
     }
   }
-  .linkedin {
-    & svg {
-      &:hover path {
-        fill: #0288d1;
-        stroke: white;
-      }
-      &:hover .letter {
-        fill: white;
-      }
+}
+.linkedin {
+  & svg {
+    &:hover path {
+      fill: #0288d1;
+      stroke: white;
+    }
+    &:hover .letter {
+      fill: white;
     }
   }
-  .instagram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & svg {
-      &:hover path {
-        fill: white;
-      }
-      &:hover .letter {
-        fill: #be2d2d;
-      }
+}
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & svg {
+    &:hover path {
+      fill: white;
+    }
+    &:hover .letter {
+      fill: #E4405F;
     }
   }
-  .telegram {
-    & svg {
-      &:hover path {
-        fill: #2da6db;
-      }
-      &:hover .letter {
-        fill: white;
-      }
+}
+.telegram {
+  & svg {
+    &:hover path {
+      fill: #2da6db;
+    }
+    &:hover .letter {
+      fill: white;
     }
   }
-  .aparat {
-    & svg {
-      border-radius: 50%;
-      &:hover .aparatsvg {
-        fill: #ed3d77;
-      }
+}
+.aparat {
+  & svg {
+    border-radius: 50%;
+    &:hover .aparatsvg {
+      fill: #ed3d77;
     }
   }
-  .magazine {
-    & svg {
-      &:hover .magazinesvg {
-        fill: #89c864;
-      }
-    }
+}
+.youtube {
+:hover path{
+ fill: red;
+}
   }
+
+.whatsapp{
+  :hover path{
+    fill: #1BD741;
+  }
+}
+.x{
+  :hover path{
+    fill: black;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .section21{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.productexplanation{
+  line-height: 28px;
+  text-align: justify;
+  text-justify: distribute;
+}
+.menu_7_link{
+  width: 100px;
+}
+.submenu_3{
+  height: 310px;
+}

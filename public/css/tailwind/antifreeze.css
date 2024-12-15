@@ -1,0 +1,213 @@
+@media (min-width: 768px){
+    .name {
+      font-size: 20px;
+    }
+    .antifreeze {
+      width: 100%;
+      height: auto;
+      background-color: rgb(218, 218, 218);
+      padding: 100px;
+      padding-top: 200px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 50px;
+       .size {
+        column-gap: 10px;
+        .size_button {
+          width: 80px;
+          height: 40px;
+          border-radius: 5px;
+          background-color: #ad974f;
+          color: white;
+          border-color: #ad974f;
+          &:hover {
+            background-color: #231f20;
+            transition-duration: 400ms;
+          }
+        }
+      }
+      .product_top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 20px;
+        padding-right: 20px;
+      }
+      .product_bottom {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+      }
+      .price {
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #ad974f;
+        color: white;
+        border-color: #ad974f;
+        &:hover {
+          background-color: #231f20;
+          transition-duration: 400ms;
+        }
+      }
+      .explanation {
+        line-height: 30px;
+        text-align: justify;
+        text-justify: distribute;
+      }
+      .points {
+        padding-top: 30px;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .points_explanation {
+        line-height: 30px;
+      }
+      .use {
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .register_number {
+        padding-top: 30px;
+      }
+    }
+    .swiperproduct-main {
+      width: 700px;
+      height: 100%;
+      margin: 0 auto;
+    }
+  
+    .swiperproduct-thumbs {
+      height: auto;
+      margin: 10px auto;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+  
+    .swiperproduct-thumbs .swiper-slide {
+      width: 20%;
+      height: 100%;
+      opacity: 0.4;
+      cursor: pointer;
+    }
+  
+    .swiperproduct-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+      border: 2px solid #007aff;
+    }
+  
+    .swiperproduct-main img,
+    .swiperproduct-thumbs img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  @media (min-width: 0px) and (max-width:768px){
+    .name {
+      font-size: 20px;
+    }
+    .antifreeze {
+      width: 100%;
+      height: auto;
+      background-color: rgb(218, 218, 218);
+      padding: 30px;
+      padding-top: 250px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 50px;
+       .size {
+        column-gap: 10px;
+        .size_button {
+          width: 80px;
+          height: 40px;
+          border-radius: 5px;
+          background-color: #ad974f;
+          color: white;
+          border-color: #ad974f;
+          &:hover {
+            background-color: #231f20;
+            transition-duration: 400ms;
+          }
+        }
+      }
+      .product_top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 20px;
+        padding-right: 20px;
+      }
+      .product_left {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .price {
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #ad974f;
+        color: white;
+        border-color: #ad974f;
+        &:hover {
+          background-color: #231f20;
+          transition-duration: 400ms;
+        }
+      }
+      .explanation {
+        line-height: 30px;
+        text-align: justify;
+        text-justify: distribute;
+      }
+      .points {
+        padding-top: 30px;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .points_explanation {
+        line-height: 30px;
+      }
+      .use {
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .register_number {
+        padding-top: 30px;
+      }
+    }
+    .swiperproduct-main {
+      width: fit-content;
+      height: 100%;
+      margin: 0 auto;
+    }
+  
+    .swiperproduct-thumbs {
+    display: none;
+    }
+    .swiperproduct-main img,
+    .swiperproduct-thumbs img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }

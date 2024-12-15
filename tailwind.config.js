@@ -27,7 +27,7 @@ export default {
       
     },
     boxShadow:{
-      boxshadow:"-3px 3px 7px 0px rgba(0, 0, 0, 0.2)"
+      boxshadow:"0px 0px 10px 5px rgba(0, 0, 0, 0.2)"
     },
     extend: {},
   },
