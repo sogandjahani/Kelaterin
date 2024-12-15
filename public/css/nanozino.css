@@ -79,7 +79,7 @@
     height: auto;
     display: flex;
     flex-flow: column;
-    padding-top: 230px;
+    padding-top: 140px;
     background-color: #d1d8e0;
     .nanozino_product {
       width: 100%;
@@ -180,7 +180,7 @@
     height: auto;
     background-color: #d1d8e0;
     padding: 20px;
-    padding-top: 250px;
+    padding-top: 150px;
     display: flex;
     flex-flow: column;
     row-gap: 50px;
