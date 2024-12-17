@@ -779,6 +779,15 @@ html{
   row-gap: 20px;
 }
 
+.gap-x-\[20px\] {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.gap-y-\[\] {
+  row-gap: ;
+}
+
 .rounded-\[5px\] {
   border-radius: 5px;
 }
@@ -852,6 +861,10 @@ html{
   padding: 50px;
 }
 
+.p-\[10px\] {
+  padding: 10px;
+}
+
 .pb-\[20px\] {
   padding-bottom: 20px;
 }
@@ -874,6 +887,10 @@ html{
 
 .pt-\[20px\] {
   padding-top: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-right {
@@ -1025,6 +1042,10 @@ html{
     margin-top: 100px;
   }
 
+  .mobile\:mt-\[10px\] {
+    margin-top: 10px;
+  }
+
   .mobile\:flex {
     display: flex;
   }
@@ -1059,6 +1080,10 @@ html{
 
   .mobile\:h-auto {
     height: auto;
+  }
+
+  .mobile\:h-\[364px\] {
+    height: 364px;
   }
 
   .mobile\:w-\[100\%\] {
@@ -1202,6 +1227,10 @@ html{
 
   .tablet\:h-\[68px\] {
     height: 68px;
+  }
+
+  .tablet\:h-\[300px\] {
+    height: 300px;
   }
 
   .tablet\:w-\[100\%\] {
@@ -1480,6 +1509,26 @@ html{
     height: auto;
   }
 
+  .desktop\:h-\[318px\] {
+    height: 318px;
+  }
+
+  .desktop\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .desktop\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .desktop\:h-\[35px\] {
+    height: 35px;
+  }
+
+  .desktop\:h-\[360px\] {
+    height: 360px;
+  }
+
   .desktop\:w-\[100\%\] {
     width: 100%;
   }
@@ -1538,6 +1587,10 @@ html{
 
   .desktop\:w-\[95px\] {
     width: 95px;
+  }
+
+  .desktop\:w-auto {
+    width: auto;
   }
 
   .desktop\:flex-row {
